@@ -371,7 +371,6 @@ Forevermem 负责：
 
 ## 致谢
 
-- [Ivyy-Ting/companion-memory](https://github.com/Ivyy-Ting/companion-memory)：MIT，保留了完整 notice
 - Generative Agents：relevance / recency / importance 思路
 - MemoryBank：Ebbinghaus 衰减与访问强化思路
 - Mem0：事实巩固的 ADD / UPDATE / DELETE / NOOP 思路
