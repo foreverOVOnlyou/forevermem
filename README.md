@@ -1,12 +1,12 @@
-# Foreverloom
+# Forevermem
 
-从乌托邦 App 抽出的完整长期记忆逻辑。Foreverloom 负责记忆生命周期；宿主只提供聊天记录、Chat API、Embedding API、设置和 UI。
+从乌托邦 App 抽出的完整长期记忆逻辑。Forevermem 负责记忆生命周期；宿主只提供聊天记录、Chat API、Embedding API、设置和 UI。
 
 Author: [foreverOVOnlyou](https://x.com/foreverOVOnlyou)
 
-Repository: https://github.com/foreverOVOnlyou/foreverloom
+Repository: https://github.com/foreverOVOnlyou/forevermem
 
-> 在当前 monorepo 中路径是 `Packages/Foreverloom`。抽成独立仓库后，本目录就是仓库根目录；命令中的 `cd Packages/Foreverloom` 换成 `cd Foreverloom` 即可。
+> 在当前 monorepo 中路径是 `Packages/Forevermem`。抽成独立仓库后，本目录就是仓库根目录；命令中的 `cd Packages/Forevermem` 换成 `cd Forevermem` 即可。
 
 ## 状态
 
@@ -22,9 +22,9 @@ Repository: https://github.com/foreverOVOnlyou/foreverloom
 ## 目录
 
 ```text
-Packages/Foreverloom/
+Packages/Forevermem/
 ├── Package.swift
-├── Sources/Foreverloom/
+├── Sources/Forevermem/
 │   ├── MemoryEngine.swift
 │   ├── MemoryPrompts.swift
 │   ├── MemoryProfilePolicy.swift
@@ -38,8 +38,8 @@ Packages/Foreverloom/
 │   ├── MemoryPruner.swift
 │   ├── MemoryFactRetriever.swift
 │   └── ...
-├── Examples/ForeverloomCLI/
-├── Tests/ForeverloomTests/
+├── Examples/ForevermemCLI/
+├── Tests/ForevermemTests/
 ├── Docs/
 │   ├── Privacy.md
 │   ├── Standalone.md
@@ -54,7 +54,7 @@ Packages/Foreverloom/
 ## 最小接入
 
 ```swift
-import Foreverloom
+import Forevermem
 
 let dependencies = MemoryEngineDependencies(
     complete: { task, system, user, timeout in
@@ -130,8 +130,8 @@ let deps = MemoryEngineDependencies(
 不联网、不需要 API Key：
 
 ```bash
-cd Packages/Foreverloom
-swift run ForeverloomCLI
+cd Packages/Forevermem
+swift run ForevermemCLI
 ```
 
 输出会展示：
@@ -143,7 +143,7 @@ swift run ForeverloomCLI
 ## 测试
 
 ```bash
-cd Packages/Foreverloom
+cd Packages/Forevermem
 swift test
 ```
 
@@ -151,7 +151,7 @@ swift test
 
 ## 设计边界
 
-Foreverloom 负责：
+Forevermem 负责：
 
 - 记忆模型与 schema
 - 评分、衰减、访问强化

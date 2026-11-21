@@ -14,7 +14,7 @@ Initial standalone extraction.
 - Recent-original hard budget and evidence recovery
 - Access reinforcement batching
 - Export, tombstone purge and archived-record purge APIs
-- `ForeverloomCLI` example with a fake provider
+- `ForevermemCLI` example with a fake provider
 - XCTest coverage for scoring, segmentation, store and full engine flow
 
 ### Known limitations

@@ -12,4 +12,4 @@ jobs:
       - name: Test
         run: swift test
       - name: Run example
-        run: swift run ForeverloomCLI
+        run: swift run ForevermemCLI

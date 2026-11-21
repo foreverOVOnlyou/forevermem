@@ -1,7 +1,7 @@
 import XCTest
-@testable import Foreverloom
+@testable import Forevermem
 
-final class ForeverloomTests: XCTestCase {
+final class ForevermemTests: XCTestCase {
     func testScoringHalfLife() {
         let base = Date(timeIntervalSinceReferenceDate: 0)
         let day: TimeInterval = 86_400
@@ -38,8 +38,8 @@ final class ForeverloomTests: XCTestCase {
 
     func testStoreRoundTripAndDelete() throws {
         let directory = FileManager.default.temporaryDirectory
-            .appendingPathComponent("ForeverloomTests-\(UUID().uuidString)", isDirectory: true)
-        let suite = "ForeverloomTests-\(UUID().uuidString)"
+            .appendingPathComponent("ForevermemTests-\(UUID().uuidString)", isDirectory: true)
+        let suite = "ForevermemTests-\(UUID().uuidString)"
         let defaults = UserDefaults(suiteName: suite)!
         defer {
             try? FileManager.default.removeItem(at: directory)
@@ -77,7 +77,7 @@ final class ForeverloomTests: XCTestCase {
 
     func testEngineSummaryAndContext() async throws {
         let directory = FileManager.default.temporaryDirectory
-            .appendingPathComponent("ForeverloomEngineFlow-\(UUID().uuidString)", isDirectory: true)
+            .appendingPathComponent("ForevermemEngineFlow-\(UUID().uuidString)", isDirectory: true)
         let store = FileMemoryStore(directory: directory)
         let base = Date(timeIntervalSinceReferenceDate: 1_000_000)
         let conversationID = UUID()
@@ -134,7 +134,7 @@ final class ForeverloomTests: XCTestCase {
 
     func testEngineSnapshot() async {
         let directory = FileManager.default.temporaryDirectory
-            .appendingPathComponent("ForeverloomEngine-\(UUID().uuidString)", isDirectory: true)
+            .appendingPathComponent("ForevermemEngine-\(UUID().uuidString)", isDirectory: true)
         let store = FileMemoryStore(directory: directory)
         let engine = MemoryEngine(store: store, dependencies: emptyDependencies())
         let id = UUID()

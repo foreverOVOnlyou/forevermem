@@ -10,7 +10,7 @@
 
 ```bash
 swift test
-swift run ForeverloomCLI
+swift run ForevermemCLI
 ```
 
 ## Design constraints

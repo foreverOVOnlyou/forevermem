@@ -2,29 +2,29 @@
 import PackageDescription
 
 let package = Package(
-    name: "Foreverloom",
+    name: "Forevermem",
     platforms: [
         .iOS(.v17),
         .macOS(.v14)
     ],
     products: [
-        .library(name: "Foreverloom", targets: ["Foreverloom"]),
-        .executable(name: "ForeverloomCLI", targets: ["ForeverloomCLI"])
+        .library(name: "Forevermem", targets: ["Forevermem"]),
+        .executable(name: "ForevermemCLI", targets: ["ForevermemCLI"])
     ],
     targets: [
         .target(
-            name: "Foreverloom",
-            path: "Sources/Foreverloom"
+            name: "Forevermem",
+            path: "Sources/Forevermem"
         ),
         .executableTarget(
-            name: "ForeverloomCLI",
-            dependencies: ["Foreverloom"],
-            path: "Examples/ForeverloomCLI"
+            name: "ForevermemCLI",
+            dependencies: ["Forevermem"],
+            path: "Examples/ForevermemCLI"
         ),
         .testTarget(
-            name: "ForeverloomTests",
-            dependencies: ["Foreverloom"],
-            path: "Tests/ForeverloomTests"
+            name: "ForevermemTests",
+            dependencies: ["Forevermem"],
+            path: "Tests/ForevermemTests"
         )
     ]
 )

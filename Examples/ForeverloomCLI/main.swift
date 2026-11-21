@@ -1,11 +1,11 @@
 import Foundation
-import Foreverloom
+import Forevermem
 
 @main
-struct ForeverloomCLI {
+struct ForevermemCLI {
     static func main() async throws {
         let directory = FileManager.default.temporaryDirectory
-            .appendingPathComponent("ForeverloomCLI-\(UUID().uuidString)", isDirectory: true)
+            .appendingPathComponent("ForevermemCLI-\(UUID().uuidString)", isDirectory: true)
         let store = FileMemoryStore(directory: directory)
         let base = Date(timeIntervalSinceReferenceDate: 1_000_000)
         let conversationID = UUID()
@@ -34,7 +34,7 @@ struct ForeverloomCLI {
                 }
                 return #"{"operations":[]}"#
             },
-            embed: { _ in throw NSError(domain: "ForeverloomCLI", code: 1) },
+            embed: { _ in throw NSError(domain: "ForevermemCLI", code: 1) },
             recordTrace: { _ in },
             profilePolicy: { .everySegment },
             vectorThreshold: { 0.62 },
