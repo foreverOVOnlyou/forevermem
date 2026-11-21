@@ -4,6 +4,8 @@
 
 Author: [foreverOVOnlyou](https://x.com/foreverOVOnlyou)
 
+Repository: https://github.com/foreverOVOnlyou/foreverloom
+
 > 在当前 monorepo 中路径是 `Packages/Foreverloom`。抽成独立仓库后，本目录就是仓库根目录；命令中的 `cd Packages/Foreverloom` 换成 `cd Foreverloom` 即可。
 
 ## 状态
